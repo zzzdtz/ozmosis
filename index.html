@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>基于星云链的摩斯密码留言本</title>
+
+    <!-- Bootstrap core CSS -->
+	  <link href="https://cdn.bootcss.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+	  <link href="assets/css/main.css" rel="stylesheet">
+	  <link href="toast.css" rel="stylesheet">
+
+
+
+  </head>
+
+  <body>
+
+    <!-- Static navbar -->
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">星云摩斯密码留言本</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+			  <li id="releases"><a>添加摩斯密码留言</a></li>
+            <li><a href="contact.html">关于我们</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+	<!-- +++++ Welcome Section +++++ -->
+
+
+	<div id="ww">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 centered">
+					<h1>基于新一代公链星云链的摩斯密码留言本!</h1>
+					<p>摩斯密码是电报时期的产物,在任何产物均可区块链化的时代，我们尝试摩斯密码区块链化。</p>
+					<p>留言本发布的内容会自动转换为很酷的摩斯密码（支持中文），留言的评论除外</p>
+					<p>摩斯密码还有许多用途，比如用灯光打SOS求救信号灯,欢迎大家一起交流</p>
+
+					<div class="relative fullwidth col-xs-12">
+						<a><button class="form-btn semibold" id="release">添加留言</button></a>
+					</div>
+				</div><!-- /col-lg-8 -->
+			</div><!-- /row -->
+		</div> <!-- /container -->
+	</div><!-- /ww -->
+
+		<div class="container">
+			<div class="row">
+				<div id="from" class="from">
+					<p>留言内容</p>
+					<div class="input">
+
+						<textarea class="form-control" id="content" rows="3" name=textarea placeholder="在这里输入中文或者英文的留言内容，会自动转换为摩斯密码展示..."></textarea>
+
+					</div>
+					<label class="col-sm-4 control-label">是否在留言本显示未加密内容</label>
+					<div class="col-sm-4">
+						<select class="form-control" id="xfType">
+							<option value="0">请选择</option>
+							<option value="1">是</option>
+							<option value="2">否</option>
+						</select>
+					</div>
+					<div id="submit" class="submit ">
+						提交留言
+					</div>
+				</div>
+			</div>
+		</div>
+
+  <div id ="information">
+
+
+
+
+
+  </div>
+
+
+
+	
+	
+	<!-- +++++ Footer Section +++++ -->
+	
+	<div id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<h4>联系我</h4>
+					<p>
+						<a href="mailto:ozmosis@qq.com">联系我ozmosis@qq.com</a>
+					</p>
+				</div><!-- /col-lg-4 -->
+				
+				<div class="col-lg-4">
+					<h4>基于</h4>
+					<p>
+						<a href="https://nebulas.io/">星云链</a><br/>
+						<a href="https://nano.nebulas.io/">星云链钱包下载</a><br/>
+						<a href="https://github.com/ChengOrangeJu/WebExtensionWallet">星云链Chrome扩展下载</a><br/>
+						<a href="https://nebulas.io/technology.html">星云链白皮书</a>
+					</p>
+				</div><!-- /col-lg-4 -->
+				
+				<div class="col-lg-4">
+					<h4>使用帮助</h4>
+				<p>留言的时候，自由选择是否同步显示原文,同步显示摩斯密码</p>
+				<p>请在留言的同时，遵守相关法律！</p>
+			
+			
+			</div>
+		
+		</div>
+	</div>
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://cdn.bootcss.com/jquery/1.12.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+	<script src="assets/js/xmorse.min.js"></script>
+
+	<script src="assets/js/toast.js"></script>
+	<script src="assets/js/nebulas.js"></script>
+	<script src="assets/js/nebPay.js"></script>
+
+	<script src="assets/js/index.js"></script>
+
+  </body>
+</html>

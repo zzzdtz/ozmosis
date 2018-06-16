@@ -1,0 +1,391 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://alvarez.is
+ *
+ * Project Name: STANLEY - Free Bootstrap 3 Theme
+ * Version: 1.0
+ * URL: http://blacktie.co
+ */
+
+.inputs {
+	height: 40px;
+	background-color: #f6f6f6;
+	border: 1px solid #ebebeb;
+	padding: 0 20px;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+}
+.from {
+	display: none;
+	padding: 20px;
+	-webkit-box-shadow: 0 3px 21px 0 hsla(0,0%,53%,.14);
+	box-shadow: 0 3px 21px 0 hsla(0,0%,53%,.14);
+}.from p {
+	 font-size: 14px;
+	 color: #2B3C49;
+	 margin-bottom: 4px;
+ }.from .input {
+	  margin-bottom: 20px;
+  }.submit.disabled {
+	   background-color: #ebebeb;
+	   color: #8590a6;
+   }.submit-comment, .submit {
+		background-color: #0084ff;
+		line-height: 36px;
+		padding: 0 20px;
+		color: #fff;
+		display: inline-block;
+		border-radius: 3px;
+		cursor: pointer;
+		transition: all 1s;
+		-webkit-transition: all 1s;
+	}
+
+.submit-comments, .submit {
+	background-color: #0084ff;
+	line-height: 36px;
+	padding: 0 20px;
+	color: #fff;
+	display: inline-block;
+	margin-top: 10px;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+}
+.form-btn {
+	width: 180px;
+	display: block;
+	height: auto;
+	padding: 15px;
+	color: #333;
+	background: #fff;
+	border: none;
+	border-radius: 3px;
+	outline: none;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	margin: auto;
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.10);
+	-moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.10);
+	-webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.10);
+	border: 1px solid #203244;
+}
+.comment {
+	margin: 10px 0 20px 0;
+}.see-comment {
+	 cursor: pointer;
+	 display: inline-block;
+	 margin-right: 100px;
+ }.comment .see-comment img {
+	  height: 24px;
+  }.comment .see-comment span {
+	   font-size: 14px;
+	   vertical-align: top;
+	   position: relative;
+	   top: 2px;
+	   color: #94AABF;
+   }.comment .add-comment-btn {
+		display: inline-block;
+		font-size: 14px;
+		color: #94AABF;
+		cursor: pointer;
+		vertical-align: top;
+		position: relative;
+		top: 2px;
+	}
+.input {
+
+	transition: all 1s;
+	-webkit-transition: all 1s;
+}
+input {
+	display: block;
+	width: 100%;
+	height: 100%;
+	line-height: 40px;
+	font-size: 14px;
+	color: #2B3C49;
+	border: 0px;
+	outline: none;
+	background: none;
+}
+.comment-arr .comment-item {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #efefef;
+	margin-bottom: 20px;
+}
+.comment-arr {
+	display: none;
+	-webkit-box-shadow: 0 3px 21px 0 hsla(0,0%,53%,.14);
+	box-shadow: 0 3px 21px 0 hsla(0,0%,53%,.14);
+	padding: 20px;
+	border-radius: 3px;
+}
+.add-comment {
+	display: none;
+	margin-top: 30px;
+}
+.release div {
+	display: inline-block;
+	font-size: 20px;
+	line-height: 40px;
+	vertical-align: top;
+	font-weight: 600;
+	color: #2B3C49;
+} .release img {
+	  display: inline-block;
+	  height: 40px;
+	  margin-right: 10px;
+  }
+.submit-comment.disabled, .submit.disabled {
+	background-color: #ebebeb;
+	color: #8590a6;
+}.submit-comment, .submit {
+	 background-color: #0084ff;
+	 line-height: 36px;
+	 padding: 0 20px;
+	 color: #fff;
+	 display: inline-block;
+	 border-radius: 3px;
+	 cursor: pointer;
+	 transition: all 1s;
+	 -webkit-transition: all 1s;
+ }
+
+
+
+
+
+body {
+  	background-color: #ffffff;
+  	font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #555;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #333;
+}
+
+h1 {
+	font-size: 35px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+
+
+/* Paragraph & Typographic */
+p {
+    line-height: 28px;
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* Links */
+a {
+    color: #1abc9c;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+.navbar {
+	text-transform: uppercase;
+	margin-bottom: 0px;
+}
+
+.navbar-inverse {
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.navbar-inverse {
+	background-color: #404553;
+	border-color: #393D49;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+	color: #222222;
+}
+
+.navbar-brand {
+	font-weight: 700;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+
+.navbar-inverse .navbar-brand {
+	color: white;
+}
+
+.navbar-inverse .navbar-toggle {
+	border-color: transparent;
+}
+
+.progress-bar-theme {
+  background-color: #1abc9c;
+}
+
+
+/* Helpers */
+
+.mt {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.pt {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+
+/* +++++ WRAP SECTIONS +++++ */
+
+#ww {
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background-color: #f2f2f2;
+}
+
+
+#footer {
+	background-color: #2f2f2f;
+	padding-top: 50px;
+	padding-bottom: 50px; 
+}
+
+#footer p {
+	color: white;
+}
+
+#footer h4 {
+	color: white;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+}
+
+
+/* +++++ Color Wraps / Blog Page +++++ */
+
+#grey {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #f2f2f2;
+}
+
+#white {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #ffffff;
+}
+
+
+
+/* Blog Date*/
+bd {
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #d2d2d2;
+	font-weight: 700;
+}
+
+/* Blog Author*/
+ba {
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+/* Blog Quote */
+.bq {
+	font-size: 22px;
+	padding-top: 30px;
+}
+
+/* Blog Tags */
+bt {
+	font-size: 12px;
+}
+
+/* ================== PORTFOLIO IMAGES HOVER EFFECT ================== */
+/* Effects also are controled by hover.zoom.js */
+.zoom { 
+    display:block; 
+    position:relative; 
+    overflow:hidden; 
+    background:transparent url(../img/loader.gif) no-repeat center;
+}
+
+
+    .zoomOverlay {
+        position:absolute;
+        top:0; left:0;
+        bottom:0; right:0;
+        display:none;
+        background-image:url(../img/zoom.png);
+        background-repeat:no-repeat;
+        background-position:center;
+    }
+
+.zoom2 {
+	opacity: 1;
+}
+
+.zoom2:hover {
+	opacity: 0.5;
+}
+
+/* glyphicon Configuration */
+
+.glyphicon {
+	font-size: 40px;
+	color: #1abc9c;
+}
