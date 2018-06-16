@@ -1,5 +1,5 @@
-var dappAddress = "n1gC62KbHneLGRKnL3YwDNk26UwvrUvTK29";
-var hash = "39f21bb020316fba6132b8938659cdfa95be2b38c5bce95826739528f3674cd8";
+var dappAddress = "n1qjtZ1pDet41Q7bHq5DcgzttYxhTfBryJs";
+var hash = "527da76f47e542900438830f3924bee471a677f29c456ccb81993e325280c613";
 var NebPay = require("nebpay");
 var nebPay = new NebPay();
 
@@ -8,8 +8,8 @@ var nebulas = require("nebulas"),
     Account = nebulas.Account,
     neb = new nebulas.Neb();
 
-//neb.setRequest(new nebulas.HttpRequest("https://mainnet.nebulas.io"));
-neb.setRequest(new nebulas.HttpRequest("https://testnet.nebulas.io"));
+neb.setRequest(new nebulas.HttpRequest("https://mainnet.nebulas.io"));
+//neb.setRequest(new nebulas.HttpRequest("https://testnet.nebulas.io"));
 var timer;
 
 
