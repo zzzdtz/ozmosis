@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="33c0413e-2246-4d66-bb6f-bfa43ab4d0a6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/assets/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/liyanheyue.js" beforeDir="false" afterPath="$PROJECT_DIR$/liyanheyue.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -61,8 +60,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="76" selection-start-line="1" selection-start-column="76" selection-end-line="1" selection-end-column="76" />
+            <state relative-caret-position="238">
+              <caret line="274" column="44" selection-start-line="274" selection-start-column="44" selection-end-line="274" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -226,12 +225,12 @@
       <workItem from="1529592582895" duration="589000" />
       <workItem from="1529593228599" duration="121000" />
       <workItem from="1529668969966" duration="19000" />
-      <workItem from="1529685566346" duration="349000" />
+      <workItem from="1529685566346" duration="556000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69797000" />
+    <option name="totallyTimeSpent" value="70004000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="285" y="121" width="1386" height="788" extended-state="0" />
@@ -518,8 +517,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="76" selection-start-line="1" selection-start-column="76" selection-end-line="1" selection-end-column="76" />
+        <state relative-caret-position="238">
+          <caret line="274" column="44" selection-start-line="274" selection-start-column="44" selection-end-line="274" selection-end-column="44" />
         </state>
       </provider>
     </entry>

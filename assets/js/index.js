@@ -272,7 +272,7 @@ function getshoujian (name, value) {
         var res = JSON.stringify([result]);
         console.log(res.result);
         if (res.result == '' && res.execute_err == 'contract check failed') {
-            toasts('合约检测失败，请检查浏览器钱包插件环境！');
+            toasts('电报检测失败，可能还没有小哥哥小姐姐给你发电报！');
             return;
         }
         //var data =JSON.parse(res);
