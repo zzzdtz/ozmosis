@@ -373,7 +373,7 @@ $('#submit').on('click', function () {
     var content = $('#content').val();
     var to  = $('#xfto').val();
     var id = Date.now() +'_'+ ~~(Math.random() * 1e6);
-    alert(to);
+
     if (to ==='') {
         toasts('未选择电报收件人,此电报将发送至公共区域');
     }
