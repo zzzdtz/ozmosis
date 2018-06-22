@@ -513,7 +513,7 @@ function renderHtml (data,to) {
             html += '   <div id="white">\n' +
                 '            <div class="container">\n' +
                 '                <div class="col-lg-8 col-lg-offset-2">\n' +
-                '                  <p><img src="assets/img/user.png" width="50px" height="50px"> <ba>'+ data[i].author +'</ba></p>\n' +
+                '                  <p><img src="assets/img/user.png" width="50px" height="50px"> <ba>发送自'+ data[i].author +'</ba></p>\n' +
                 '<p>'+ data[i].content +'</p>\n' +
                 '<p>'+ data[i].xmorse +'</p>\n' +
                 '</div></div></div></div>'
@@ -522,7 +522,7 @@ function renderHtml (data,to) {
             html += '   <div id="grey">\n' +
                 '            <div class="container">\n' +
                 '                <div class="col-lg-8 col-lg-offset-2">\n' +
-                '                  <p><img src="assets/img/user.png" width="50px" height="50px"> <ba>'+ data[i].author +'</ba></p>\n' +
+                '                  <p><img src="assets/img/user.png" width="50px" height="50px"> <ba>发送自'+ data[i].author +'</ba></p>\n' +
                 '<p>'+ data[i].content +'</p>\n' +
                 '<p>'+ data[i].xmorse +'</p>\n' +
                 '</div></div></div></div>'
