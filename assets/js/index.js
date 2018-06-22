@@ -347,6 +347,7 @@ function getyifa (name, value) {
                         $('#release').find('div').html('发布我的电报信息');
                         $('#release').data('type', 1);
                         $('#from').hide();
+                        $('#information').hide();
                         $('#yifainfo').show();
                     }
                 }
@@ -404,11 +405,11 @@ $('#submit').on('click', function () {
                     if(to){
                         timer = setInterval(function () {
                             getyifa('id',id)
-                        }, 5000)
+                        }, 6000)
                     }else{
                         timer = setInterval(function () {
                             get('id', id)
-                        }, 5000)
+                        }, 6000)
                     }
 
                 } else {

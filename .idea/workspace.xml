@@ -60,8 +60,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="274" column="44" selection-start-line="274" selection-start-column="44" selection-end-line="274" selection-end-column="44" />
+            <state relative-caret-position="179">
+              <caret line="407" column="28" selection-start-line="407" selection-start-column="28" selection-end-line="407" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -106,6 +106,8 @@
       <find>release</find>
       <find>encode</find>
       <find>alert</find>
+      <find>getyifa</find>
+      <find>time</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -225,12 +227,12 @@
       <workItem from="1529592582895" duration="589000" />
       <workItem from="1529593228599" duration="121000" />
       <workItem from="1529668969966" duration="19000" />
-      <workItem from="1529685566346" duration="556000" />
+      <workItem from="1529685566346" duration="831000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70004000" />
+    <option name="totallyTimeSpent" value="70279000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="285" y="121" width="1386" height="788" extended-state="0" />
@@ -517,8 +519,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="274" column="44" selection-start-line="274" selection-start-column="44" selection-end-line="274" selection-end-column="44" />
+        <state relative-caret-position="179">
+          <caret line="407" column="28" selection-start-line="407" selection-start-column="28" selection-end-line="407" selection-end-column="28" />
         </state>
       </provider>
     </entry>
