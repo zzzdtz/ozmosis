@@ -1,5 +1,5 @@
-var dappAddress = "n1jUamWDCWHyDYXKXkW5aZz1xmhfPaZBYiE";
-var hash = "a7d49773e1cfc8a1975a0b926879e930ecd11a9e24b77ec0ec77e94ae9617bd9";
+var dappAddress = "n1xXDvcTt8RhCNrZPKKx4kkk47HWE4Ny7Jt";
+var hash = "562249135f25c444f053aa8bf31c0f127bc601cc12f2b4104f71eab667d5270c";
 var NebPay = require("nebpay");
 var nebPay = new NebPay();
 

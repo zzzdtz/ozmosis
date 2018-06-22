@@ -12,7 +12,7 @@ XmorsesContract.prototype = {
                 author: Blockchain.transaction.from,
                 id: obj.id,
                 name: obj.name,
-                xmorse:obj.content,
+                xmorse:obj.xmorse,
                 content: obj.content,
                 time: obj.time,
                 to: obj.to,

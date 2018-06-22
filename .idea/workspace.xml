@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="33c0413e-2246-4d66-bb6f-bfa43ab4d0a6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/assets/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liyanheyue.js" beforeDir="false" afterPath="$PROJECT_DIR$/liyanheyue.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,8 +29,8 @@
       <file leaf-file-name="liyanheyue.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/liyanheyue.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="165">
+              <caret line="11" column="11" lean-forward="true" selection-end-line="94" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -37,7 +38,7 @@
       <file leaf-file-name="nebulas.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/nebulas.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8670">
+            <state relative-caret-position="15">
               <caret line="578" column="64" selection-start-line="578" selection-start-column="64" selection-end-line="578" selection-end-column="64" />
             </state>
           </provider>
@@ -60,8 +61,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="375" lean-forward="true" selection-start-line="375" selection-end-line="375" />
+            <state relative-caret-position="15">
+              <caret line="1" column="76" selection-start-line="1" selection-start-column="76" selection-end-line="1" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -105,6 +106,7 @@
       <find>submit-comment</find>
       <find>release</find>
       <find>encode</find>
+      <find>alert</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -224,12 +226,12 @@
       <workItem from="1529592582895" duration="589000" />
       <workItem from="1529593228599" duration="121000" />
       <workItem from="1529668969966" duration="19000" />
-      <workItem from="1529685566346" duration="127000" />
+      <workItem from="1529685566346" duration="349000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69575000" />
+    <option name="totallyTimeSpent" value="69797000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="285" y="121" width="1386" height="788" extended-state="0" />
@@ -469,16 +471,6 @@
     <entry file="file://$PROJECT_DIR$/assets/js/xmorse.js" />
     <entry file="file://$PROJECT_DIR$/heyue.js" />
     <entry file="file://$PROJECT_DIR$/tt.html" />
-    <entry file="file://$PROJECT_DIR$/assets/js/nebulas.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8670">
-          <caret line="578" column="64" selection-start-line="578" selection-start-column="64" selection-end-line="578" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/xmorse.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/contact.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1425">
@@ -507,17 +499,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/liyanheyue.js">
+    <entry file="file://$PROJECT_DIR$/assets/js/nebulas.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <caret line="578" column="64" selection-start-line="578" selection-start-column="64" selection-end-line="578" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/xmorse.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/liyanheyue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="11" lean-forward="true" selection-end-line="94" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="375" lean-forward="true" selection-start-line="375" selection-end-line="375" />
+        <state relative-caret-position="15">
+          <caret line="1" column="76" selection-start-line="1" selection-start-column="76" selection-end-line="1" selection-end-column="76" />
         </state>
       </provider>
     </entry>
