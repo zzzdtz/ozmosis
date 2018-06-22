@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>星云摩斯密码电报</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.0.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="toast.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+<!-- Static navbar -->
+<div class="navbar navbar-inverse navbar-static-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">星云摩斯密码电报</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li id="releases"><a>发送电报</a></li>
+                <li><a href="yifa.html">已发电报</a></li>
+                <li id="reget"><a>收电报箱</a></li>
+                <li id="reads"><a>电报解读</a></li>
+                <li><a href="contact.html">关于我们</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+<!-- +++++ Welcome Section +++++ -->
+
+
+<div id="ww" >
+
+    <div class="container">
+        <div class="row">
+            <div class="radar"></div>
+
+        </div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /ww -->
+
+<div class="container">
+    <div class="row">
+        <div id="from" class="from">
+
+
+            <label class="control-label">收件人</label>
+            <div class="input-medium">
+                <input type="text" class="form-control" id="xfto">
+            </div>
+
+
+            <p>电报内容</p>
+            <div class="input">
+
+                <textarea class="form-control" id="content" rows="3" name=textarea placeholder="在这里输入中文或者英文的留言内容，会自动转换为摩斯密码展示..."></textarea>
+
+            </div>
+
+            <label class="control-label">发件人</label>
+            <div class="input-medium">
+                <input type="text" class="form-control" id="xffrom">
+            </div>
+
+            <div id="submit" class="submit ">
+                发送电报
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div id ="recefrom">
+
+</div>
+
+
+
+
+
+
+<!-- +++++ Footer Section +++++ -->
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h4>联系我</h4>
+                <p>
+                    <a href="mailto:ozmosis@qq.com">联系我ozmosis@qq.com</a>
+                </p>
+            </div><!-- /col-lg-4 -->
+
+            <div class="col-lg-4">
+                <h4>基于</h4>
+                <p>
+                    <a href="https://nebulas.io/">星云链</a><br/>
+                    <a href="https://nano.nebulas.io/">星云链钱包下载</a><br/>
+                    <a href="https://github.com/ChengOrangeJu/WebExtensionWallet">星云链Chrome扩展下载</a><br/>
+                    <a href="https://nebulas.io/technology.html">星云链白皮书</a>
+                </p>
+            </div><!-- /col-lg-4 -->
+
+            <div class="col-lg-4">
+                <h4>使用帮助</h4>
+                <p>我们支持移动端星云链钱包使用</p>
+                <p>标准的摩斯密码并不包含中文字符，本此电报Morse密码使用国际标准Uncode转换Morse得到</p>
+                <p>请在发电报的同时，遵守相关法律！</p>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/xmorse.min.js"></script>
+
+    <script src="assets/js/toast.js"></script>
+    <script src="assets/js/nebulas.js"></script>
+    <script src="assets/js/nebPay.js"></script>
+
+    <script src="assets/js/index.js"></script>
+
+</body>
+</html>

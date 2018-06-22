@@ -1,5 +1,5 @@
-var dappAddress = "n1qjtZ1pDet41Q7bHq5DcgzttYxhTfBryJs";
-var hash = "527da76f47e542900438830f3924bee471a677f29c456ccb81993e325280c613";
+var dappAddress = "n1jUamWDCWHyDYXKXkW5aZz1xmhfPaZBYiE";
+var hash = "a7d49773e1cfc8a1975a0b926879e930ecd11a9e24b77ec0ec77e94ae9617bd9";
 var NebPay = require("nebpay");
 var nebPay = new NebPay();
 
@@ -45,6 +45,7 @@ function init () {
     window.addEventListener('message', function (e) {
         if (e.data && e.data.data && e.data.data.account) {
             window.author = e.data.data.account;
+            $("#xffrom").val(author);
 
         }
 
@@ -75,9 +76,52 @@ $('#releases').on('click', function () {
     if($("#from").is(":hidden")){
         $('#information').hide();
         $('#from').show();
+        $('#yifainfo').hide();
+        $('#shoujianinfo').hide();
     }else{
         $('#information').show();
         $('#from').hide();
+        $('#yifainfo').hide();
+        $('#shoujianinfo').hide();
+    }
+
+})
+
+$('#yifa').on('click', function () {
+    if($("#reto").is(":hidden")){
+        $('#information').show();
+        $('#from').hide();
+        $('#ww').show();
+        $('#yifainfo').hide();
+        $('#shoujianinfo').hide();
+
+    }else{
+        $('#information').hide();
+        $('#from').hide();
+        $('#ww').hide();
+        $('#shoujianinfo').hide();
+        getyifa();
+        $('#yifainfo').show();
+    }
+
+})
+
+
+
+$('#shoujian').on('click', function () {
+    if($("#reget").is(":hidden")){
+        $('#information').show();
+        $('#from').hide();
+        $('#yifainfo').hide();
+        $('#shoujianinfo').hide();
+
+    }else{
+        $('#information').hide();
+        $('#from').hide();
+        $('#ww').hide();
+        getshoujian();
+        $('#yifainfo').hide();
+        $('#shoujianinfo').show();
     }
 
 })
@@ -124,16 +168,18 @@ $('#information').on('input', '.comment-input', function () {
 
 // 监控添加项目那一堆输入框
 function verification () {
-    var name = $('#xfType').val();
+    var xfto = $('#xfto').val();
+
+    var xffrom = $('#xffrom').val();
 
     var content = $('#content').val();
-    if (name && content) {
+    if (xffrom && content) {
         $('#submit').removeClass('disabled')
     } else {
         $('#submit').addClass('disabled')
     }
 }
-$('#name').on('input', function () {
+$('#xffrom').on('input', function () {
     verification()
 })
 
@@ -155,7 +201,7 @@ function get (name, value, time) {
     var gas_price = "1000000";
     var gas_limit = "2000000";
     var callFunction = "get";
-    var arg = $("#search_value").val();
+    var arg = '';
     var callArgs = JSON.stringify([arg]);
     var contract = {
         "function": callFunction,
@@ -179,8 +225,8 @@ function get (name, value, time) {
                     if (data[i].id == value) {
                         renderHtml(data);
                         clearInterval(timer);
-                        toasts('信息添加成功!');
-                        $('#release').find('div').html('发布我的留言本信息');
+                        toasts('电报添加成功!');
+                        $('#release').find('div').html('发布我的电报信息');
                         $('#release').data('type', 1);
                         $('#from').hide();
                         $('#information').show();
@@ -188,23 +234,6 @@ function get (name, value, time) {
                 }
             }
 
-            if (name === 'time') {
-                console.log('time')
-                for (var i = 0; i < data.length; i++) {
-                    console.log(data[i].id, value, '11111')
-                    if (data[i].id == value) {
-                        for (var y = 0; y < data[i].comment.length; y++) {
-                            console.log(data[i].comment[y].time, time, '222222')
-                            if (data[i].comment[y].time == time) {
-                                renderHtml(data);
-                                clearInterval(timer);
-                                toasts('信息添加成功!');
-
-                            }
-                        }
-                    }
-                }
-            }
 
         } else {
             renderHtml(data);
@@ -221,27 +250,150 @@ function get (name, value, time) {
 }
 
 
+function getshoujian (name, value) {
+    if (!name) {
+        toasts('正在从星云链加载数据中请稍等...')
+    }
+    var from = Account.NewAccount().getAddressString();
+    var values = "0";
+    var nonce = "0";
+    var gas_price = "1000000";
+    var gas_limit = "2000000";
+    var callFunction = "getshoujian";
+    var arg = author;
+    var callArgs = JSON.stringify([arg]);
+    var contract = {
+        "function": callFunction,
+        "args": callArgs
+    }
+    neb.api.call(from, dappAddress, values, nonce, gas_price, gas_limit, contract).then(function (resp) {
+        var result = resp.result;
+        console.log("return of rpc call: " + JSON.stringify([result]))
+        var res = JSON.stringify([result]);
+        console.log(res.result);
+        if (res.result == '' && res.execute_err == 'contract check failed') {
+            toasts('合约检测失败，请检查浏览器钱包插件环境！');
+            return;
+        }
+        //var data =JSON.parse(res);
+        var data = JSON.parse(JSON.parse(JSON.parse(res)));
+        console.log(data, 'data');
+        if (name) {
+            if (name === 'id') {
+                for (var i = 0; i < data.length; i++) {
+                    if (data[i].id == value) {
+                        renderHtml(data);
+                        clearInterval(timer);
+                        toasts('电报添加成功!');
+                        $('#release').find('div').html('发布我的电报信息');
+                        $('#release').data('type', 1);
+                        $('#from').hide();
+                        $('#information').show();
+                    }
+                }
+            }
+
+
+        } else {
+            renderHtml(data,'shoujian');
+
+        }
+
+    }).catch(function (err) {
+        //cbSearch(err)
+        console.log("error:" + err.message)
+        toasts('合约检测失败，请检查浏览器钱包插件环境！');
+    })
+
+
+}
+
+
+function getyifa (name, value) {
+    if (!name) {
+        toasts('正在从星云链加载数据中请稍等...')
+    }
+    var from = Account.NewAccount().getAddressString();
+    var values = "0";
+    var nonce = "0";
+    var gas_price = "1000000";
+    var gas_limit = "2000000";
+    var callFunction = "getyifa";
+    var arg = author;
+    var callArgs = JSON.stringify([arg]);
+    var contract = {
+        "function": callFunction,
+        "args": callArgs
+    }
+    neb.api.call(from, dappAddress, values, nonce, gas_price, gas_limit, contract).then(function (resp) {
+        var result = resp.result;
+        console.log("return of rpc call: " + JSON.stringify([result]))
+        var res = JSON.stringify([result]);
+        console.log(res.result);
+        if (res.result == '' && res.execute_err == 'contract check failed') {
+            toasts('合约检测失败，请检查浏览器钱包插件环境！');
+            return;
+        }
+        //var data =JSON.parse(res);
+        var data = JSON.parse(JSON.parse(JSON.parse(res)));
+        console.log(data, 'data');
+        if (name) {
+            if (name === 'id') {
+                for (var i = 0; i < data.length; i++) {
+                    if (data[i].id == value) {
+                        renderHtml(data);
+                        clearInterval(timer);
+                        toasts('电报添加成功!');
+                        $('#release').find('div').html('发布我的电报信息');
+                        $('#release').data('type', 1);
+                        $('#from').hide();
+                        $('#yifainfo').show();
+                    }
+                }
+            }
+
+
+        } else {
+            renderHtml(data,'yifa');
+
+        }
+
+    }).catch(function (err) {
+        //cbSearch(err)
+        console.log("error:" + err.message)
+        toasts('合约检测失败，请检查浏览器钱包插件环境！');
+    })
+
+
+}
+
 // 提交新项目
 $('#submit').on('click', function () {
-    var name = $('#xfType').val();
+    var xffrom = $('#xffrom').val();
     var content = $('#content').val();
+    var to  = $('#xfto').val();
     var id = Date.now() +'_'+ ~~(Math.random() * 1e6);
-    if (name == '0') {
-        toasts('未选择是否在留言本显示原文');
+    alert(to);
+    if (to ==='') {
+        toasts('未选择电报收件人,此电报将发送至公共区域');
+    }
+    if (xffrom == '0') {
+        toasts('未选择钱包登录');
         return;
     } else if (content == '') {
-        toasts('未填写留言本内容');
+        toasts('未填写电报内容');
         return;
     }
     if(!author){
         author = '手机用户';
     }
-    if (name  && content) {
+    if (xffrom  && content) {
         toasts('正在提交中请稍等...');
         nebPay.call(dappAddress, "0", "set", JSON.stringify([{
             id: id,
+            to: to,
             author:author,
-            name: name,
+            xffrom: xffrom,
             content: xmorse.encode(content),
             xmorse:content,
             time: Date.now()
@@ -249,9 +401,16 @@ $('#submit').on('click', function () {
             listener: function(res){
                 if (res.txhash) {
                     toasts('系统正在尝试拉去信息中......请稍等 并不要操作页面');
-                    timer = setInterval(function () {
-                        get('id', id)
-                    }, 5000)
+                    if(to){
+                        timer = setInterval(function () {
+                            getyifa('id',id)
+                        }, 5000)
+                    }else{
+                        timer = setInterval(function () {
+                            get('id', id)
+                        }, 5000)
+                    }
+
                 } else {
                     toasts('信息添加失败,请稍后再试');
 
@@ -339,9 +498,15 @@ function isEven(value) {
         return false;
 }
 
-function renderHtml (data) {
+function renderHtml (data,to) {
     var html = '';
-    console.log(data)
+    if(to == 'yifa'){
+        html += '   <div id="white"><div class="container"><h3>已发电报箱</h3></div></div>'
+    }else if(to == 'shoujian'){
+        html += '   <div id="white"><div class="container"><h3>电报收件箱</h3></div></div>'
+    }else{
+        html += '   <div id="white"><div class="container"><h3>无人认领电报</h3></div></div>'
+    }
     for (var i = 0; i < data.length; i++) {
 
         if(isEven(i)){
@@ -351,8 +516,7 @@ function renderHtml (data) {
                 '                  <p><img src="assets/img/user.png" width="50px" height="50px"> <ba>'+ data[i].author +'</ba></p>\n' +
                 '<p>'+ data[i].content +'</p>\n' +
                 '<p>'+ data[i].xmorse +'</p>\n' +
-                '<div class="comment"><div class="see-comment" data-num="'+data[i].comment.length+'"><img src="assets/img/comment.png" alt=""><span>'+data[i].comment.length+'条评论</span></div>\n' +
-                '<div class="add-comment-btn">添加评论</div></div><div class="comment-arr">';
+                '</div></div></div></div>'
 
         }else{
             html += '   <div id="grey">\n' +
@@ -361,20 +525,18 @@ function renderHtml (data) {
                 '                  <p><img src="assets/img/user.png" width="50px" height="50px"> <ba>'+ data[i].author +'</ba></p>\n' +
                 '<p>'+ data[i].content +'</p>\n' +
                 '<p>'+ data[i].xmorse +'</p>\n' +
-                '<div class="comment"><div class="see-comment" data-num="'+data[i].comment.length+'"><img src="assets/img/comment.png" alt=""><span>'+data[i].comment.length+'条评论</span></div>\n' +
-                '<div class="add-comment-btn">添加评论</div></div><div class="comment-arr">\n';
+                '</div></div></div></div>'
+
         }
 
 
-        for (var y = 0; y < data[i].comment.length; y++) {
-            html += '<div class="comment-item">'
-                + '<p>'+ data[i].comment[y].body+ '</p>'
-                + '<p>'+ getTime(data[i].comment[y].time) +'</p></div>'
-        }
-
-        html += '</div><div class="add-comment"><div class="inputs"><input type="text" class="comment-input" placeholder="请输入评论...">'
-            + '</div><div data-id="'+ data[i].id +'" class="submit-comments disabled">评论</div></div></div></div></div>';
+    }
+    if(to == 'yifa'){
+        $('#yifainfo').html(html);
+    }else if(to == 'shoujian'){
+        $('#shoujianinfo').html(html);
+    }else{
+        $('#information').html(html);
     }
 
-    $('#information').html(html);
 }
