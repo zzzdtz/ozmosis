@@ -282,7 +282,7 @@ function getshoujian (name, value) {
             if (name === 'id') {
                 for (var i = 0; i < data.length; i++) {
                     if (data[i].id == value) {
-                        renderHtml(data);
+                        renderHtml(data,'shoujian');
                         clearInterval(timer);
                         toasts('电报添加成功!');
                         $('#release').find('div').html('发布我的电报信息');
@@ -341,7 +341,7 @@ function getyifa (name, value) {
             if (name === 'id') {
                 for (var i = 0; i < data.length; i++) {
                     if (data[i].id == value) {
-                        renderHtml(data);
+                        renderHtml(data,'yifa');
                         clearInterval(timer);
                         toasts('电报添加成功!');
                         $('#release').find('div').html('发布我的电报信息');
