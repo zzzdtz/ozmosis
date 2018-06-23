@@ -302,7 +302,7 @@ function getshoujian (name, value) {
     }).catch(function (err) {
         //cbSearch(err)
         console.log("error:" + err.message)
-        toasts('合约检测失败，请检查浏览器钱包插件环境！');
+        toasts('电报检测失败，可能还没有小哥哥小姐姐给你发电报！');
     })
 
 

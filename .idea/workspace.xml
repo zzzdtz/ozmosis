@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33c0413e-2246-4d66-bb6f-bfa43ab4d0a6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -29,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/liyanheyue.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" column="11" lean-forward="true" selection-end-line="94" selection-end-column="33" />
+              <caret line="11" column="11" selection-end-line="94" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -37,7 +38,7 @@
       <file leaf-file-name="nebulas.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/nebulas.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="8670">
               <caret line="578" column="64" selection-start-line="578" selection-start-column="64" selection-end-line="578" selection-end-column="64" />
             </state>
           </provider>
@@ -60,8 +61,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="407" column="28" selection-start-line="407" selection-start-column="28" selection-end-line="407" selection-end-column="28" />
+            <state relative-caret-position="953">
+              <caret line="304" column="39" selection-start-line="304" selection-start-column="39" selection-end-line="304" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -227,12 +228,13 @@
       <workItem from="1529592582895" duration="589000" />
       <workItem from="1529593228599" duration="121000" />
       <workItem from="1529668969966" duration="19000" />
-      <workItem from="1529685566346" duration="831000" />
+      <workItem from="1529685566346" duration="974000" />
+      <workItem from="1529716788078" duration="37000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70279000" />
+    <option name="totallyTimeSpent" value="70459000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="285" y="121" width="1386" height="788" extended-state="0" />
@@ -502,7 +504,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/nebulas.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="8670">
           <caret line="578" column="64" selection-start-line="578" selection-start-column="64" selection-end-line="578" selection-end-column="64" />
         </state>
       </provider>
@@ -513,14 +515,14 @@
     <entry file="file://$PROJECT_DIR$/liyanheyue.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="11" lean-forward="true" selection-end-line="94" selection-end-column="33" />
+          <caret line="11" column="11" selection-end-line="94" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="407" column="28" selection-start-line="407" selection-start-column="28" selection-end-line="407" selection-end-column="28" />
+        <state relative-caret-position="953">
+          <caret line="304" column="39" selection-start-line="304" selection-start-column="39" selection-end-line="304" selection-end-column="39" />
         </state>
       </provider>
     </entry>
