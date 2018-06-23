@@ -302,7 +302,7 @@ function getshoujian (name, value) {
     }).catch(function (err) {
         //cbSearch(err)
         console.log("error:" + err.message)
-        toasts('电报检测失败，可能还没有小哥哥小姐姐给你发电报！');
+        toasts('暂时没有在合约地址检测到发给你的电报，请检查！');
     })
 
 
@@ -362,7 +362,7 @@ function getyifa (name, value) {
     }).catch(function (err) {
         //cbSearch(err)
         console.log("error:" + err.message)
-        toasts('合约检测失败，请检查浏览器钱包插件环境！');
+        toasts('暂时没有在合约地址检测到你的已发记录，请检查是否注册！');
     })
 
 
